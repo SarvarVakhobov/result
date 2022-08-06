@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'javascript/jquery-3.4.1.min.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+  
+        <div class="demo-flex-spacer"></div>
+      
+        <div class="webflow-style-input">
+          <input class="" type="tel" id="user-input" placeholder="Type Your Phone Number: 998"></input>
+          <button type="submit"><i class="icon ion-android-arrow-forward"></i></button>
+        </div>
+        <div class="status" id="replaceable-content">
+            {% include 'result-index.html' %}
+        </div>
+        
+        <div class="info-section">
+            For More Information: <i class="fa-brands fa-telegram"></i><a href="https://t.me/maxsoft_academy">Maxsoft</a>
+        </div>
+        <div class="demo-flex-spacer"></div>
+        
+        <a class="demo" href="https://maxsoft.uz/" title="Maxsoft">Maxsoft.uz</a>
+        
+    </div>
+    <script type="text/javascript" src="{% static "javascript/main.js" %}"></script>
+
+</body>
+</html>

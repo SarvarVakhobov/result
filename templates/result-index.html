@@ -1,0 +1,19 @@
+    {% if result%}
+        {% for el in result %}
+            {% if el.result %}
+            <div class="accepted">
+                Accepted
+            </div>
+            
+
+        {% else %}
+            <div class="rejected">
+                Rejected
+            </div>
+            {% endif %}
+        {% endfor %}
+        {% else %}
+        <div class="rejected" style="color: White">
+            In prosses
+        </div>
+    {% endif %}
